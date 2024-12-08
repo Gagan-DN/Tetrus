@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background change</title>
+</head>
+<body>
+    <!--<video src="./assets/images/reference/fashion.gif" autoplay muted></video>-->
+    <img id="sourceimg" src="./assets/images/reference/fashion.gif" alt="men image">
+    <canvas id="output"></canvas>
+</body>
+<script>
+    function init(){
+        let source_img,c_out,ctx_out,c_temp,ctx_temp;
+        source_img=document.getElementById("sourceimg");
+        c_out=document.getElementById("output");
+        ctx_out=c_out.getContext("2d");
+
+        c_temp=document.createElement("canvas");
+        c_temp=setAttribute("width",800);
+        c_temp=setAttribute("height",450);
+        ctx_temp=c_temp.getContext("2d");
+
+
+
+
+    }
+    function computeFrame(){
+        ctx_temp.drawImage(source_img,0,0,)
+    }
+</script>
+</html>

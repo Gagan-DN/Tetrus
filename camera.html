@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <style>
+        a{
+            padding: 10px;
+            background-color: orangered;
+            color: white;
+            text-decoration:none;
+        }
+    </style>
+    <script src="./assets/js/libraries/webcam.js"></script>
+</head>
+<body>
+    <div class="panel">
+        <button id="switchFrontBtn">Front Camera</button>
+        <button id="switchBackBtn">Back Camera</button>
+        <button id="snapBtn">Snap</button>
+    </div>
+    <div style="width:100%" >
+        <video>play muted playsinline>not avilable</video>
+        <canvas id="canvas" style="display:none"></canvas>
+        <img id="photo" alt="The screen capture will appear in this box.">
+    </div>
+    <script>
+        //reference to the current media stream
+        var mediaStream=null;
+        //Prefer camera resolution nearest to 1280x720.
+        var constraints={
+            audio:false,
+            video:{
+                width:{ideal:640},
+                height:{ideal:480},
+                facingMde:"environment"
+            }
+        };
+        async function getMediadStream(constraints) {
+            try{
+                
+            }
+            catch(err){
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
