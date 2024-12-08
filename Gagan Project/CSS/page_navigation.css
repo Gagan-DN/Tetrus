@@ -1,0 +1,31 @@
+
+/*pre next button end*/
+.btn1{
+    width:80px;
+    height:40px;
+    color:#fff;
+    background:linear-gradient(to bottom right,#1a8cff,#99ccff,#99ccff,#1a8cff);
+    font-size:1em;
+  }
+  .upsl{
+    border-radius:0px 0px 0px 50px;
+  }
+  .upsr{
+    border-radius:0px 0px 50px 0px;
+  }
+  .dpsl{
+    border-radius:50px 0px 0px 0px;
+  }
+  .dpsr{
+    border-radius:0px 50px 0px 0px;
+  }
+  .page_nv_container{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+  }
+
+  /*pre next button end*/
+

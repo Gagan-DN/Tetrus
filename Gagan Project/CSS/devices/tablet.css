@@ -1,0 +1,309 @@
+
+.tab_container{
+  /*margin:40px;*/
+/* background-color: pink;*/
+  width: 90%;
+  height: 90%;
+  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#toggle_btn{
+  background:transparent;
+  border:1px solid #fff;
+  border-radius:20px 10px;
+  font-family:'times new roman',serif;
+  font-size:20px;
+  background:linear-gradient(to bottom right,#1a8cff,#99ccff,#99ccff,#1a8cff);
+  color:#fff;
+  width:120px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  overflow: hidden;
+}
+.tab-box{
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  /*background-color: palegreen;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+iframe{
+  width:100%;
+  height:100%;
+  border:none;
+}
+.tab_label{
+  color:silver;
+  font-family:'Brush sciprt Mt',cursive;
+}
+.tab_camera{
+  height: 8px;
+  width: 8px;
+  background: linear-gradient(270deg, #4a4a4a, transparent);
+  border-radius: 50%;
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.camera_eye{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background: #0045ad;
+}
+/* tab portrait st */
+.portrait{
+  min-width:573px;
+  height:768px;
+  /*width: 60%;
+  height: 60%;*/
+ /* transform:scale(0.3);*/
+  position: absolute;
+  /*left:0%;*/
+}
+.portrait .tab_frame{
+  background-color:black;
+  width:100%;
+  height:100%;
+  border:0.1 solid gray;
+  padding:15px 10px;
+  border-radius:10px;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.3), 
+    0 0 0 3px gray, 
+    0 0 30px rgba(0,0,0,0.3);
+  position: relative;
+}
+.portrait .tab_camera{
+  top: 0.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.portrait .tab_screen{
+  background-color:white;
+  width:100%;
+  height:100%;
+  border-radius:10px;
+}
+.portrait .tab_label{
+  color:silver;
+  font-family:'Brush sciprt Mt',cursive;
+  transform: translateX(50%);
+  position: absolute;
+  top:98%;
+  left: 48%;
+  font-size:0.8em;
+}
+/* tab portrait ed */
+/* tab landscape st */
+.landscape{
+  min-width:768px;
+  height:573px;
+  /*width:60%;
+  height:60%;*/
+  
+ position: absolute;
+}
+.landscape .tab_frame{
+  background-color:black;
+  width:100%;
+  height:100%;
+  border:0.1 solid gray;
+  padding:10px 15px;
+  border-radius:10px;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.3), 
+    0 0 0 3px gray, 
+    0 0 30px rgba(0,0,0,0.3);
+  position: relative;
+}
+.landscape .tab_camera{
+  top: 50%;
+  right:0.5%;
+  transform: translateY(-50%);
+}
+.landscape .tab_screen{
+  background-color:white;
+  width:100%;
+  height:100%;
+  /*   padding:15px; */
+  border-radius:10px;
+}
+.landscape .tab_label{
+  color:silver;
+  font-family:'Brush sciprt Mt',cursive;
+  transform:rotate(90deg);
+  position:absolute;
+  top: 50%;
+  left:0%;
+  font-size:0.4em;
+}
+
+/* tab landscape ed */
+@media only screen and (min-width:600px){
+  .landscape{
+    transform:scale(0.4);
+  }
+  .portrait{
+    transform:scale(0.5); 
+  }
+  .tab-box{
+    /*height: 80%;
+    /*position: relative;*/
+    width: 100%;
+    margin:0px;
+    overflow: hidden;
+  }
+  .tab_container{
+      min-height: 70vh;
+      width: 100%;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-evenly;
+      align-items:center;
+      margin:0px;
+      position: relative;
+  }
+}
+@media only screen and (max-width:600px){
+  .landscape{
+    transform:scale(0.4);
+  }
+  .portrait{
+    transform:scale(0.4);
+    
+  }
+  .tab-box{
+    /*height: 80%;*/
+   /* position: absolute;*/
+   width: 100%;
+   margin:0px;
+    overflow: hidden;
+  }
+  .tab_container{
+      min-height: 70vh;
+      width: 100%;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-evenly;
+      align-items:center;
+      margin:0px;
+      position: relative;
+  }
+}
+/* resizeing display st*/
+/*Exactly small devices(phone,600px and down)*/
+@media only screen and (max-width:600px){
+  .landscape{
+    transform:scale(0.4);
+  }
+  .portrait{
+    transform:scale(0.45);
+    
+  }
+}
+/*small devices(portiait tablets and large phones,600px and up)*/
+@media only screen and (min-width:600px){
+  .landscape{
+    transform:scale(0.6);
+  }
+  .portrait{
+    transform:scale(0.45);
+    
+  }
+}
+/*medium devices(landscape tablets,768px and up)*/
+@media only screen and (min-width:768px){
+  .landscape{
+    transform:scale(0.45);
+  }
+  .portrait{
+    transform:scale(0.5);
+    
+  }
+
+}
+@media only screen and (min-width:800px){
+  .landscape{
+    transform:scale(0.45);
+  }
+  .portrait{
+    transform:scale(0.5);
+    
+  }
+
+}
+@media only screen and (min-width:850px){
+  .landscape{
+    transform:scale(0.5);
+  }
+  .portrait{
+    transform:scale(0.5);
+    
+  }
+
+}
+@media only screen and (min-width:860px){
+  .landscape{
+    transform:scale(0.5);
+  }
+  .portrait{
+    transform:scale(0.5);
+    
+  }
+
+}
+@media only screen and (min-width:900px){
+  .landscape{
+    transform:scale(0.5);
+  }
+  .portrait{
+    transform:scale(0.5);
+    
+  }
+
+}
+
+/*large devices(laptops/desktops,992px and up)*/
+
+@media only screen and (min-width:920px){
+  .landscape{
+    transform:scale(0.4);
+  }
+  .portrait{
+    transform:scale(0.5);
+    
+  }
+}
+@media only screen and (min-width:1100px){
+  .landscape{
+    transform:scale(0.5);
+  }
+  .portrait{
+    transform:scale(0.5);
+    
+  }
+}
+
+/*Extreamly large devices(large laptops/desktops,1200px and up)*/
+@media only screen and (min-width:1200px){
+  .landscape{
+    transform:scale(0.55);
+  }
+  .portrait{
+    transform:scale(0.5);
+    
+  }
+}
+/*Responsive to various Devices end*/
+/* resizeing display ed*/
+/* tab view end*/

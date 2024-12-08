@@ -1,0 +1,22 @@
+/* main  style start */
+main .title-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+  }
+  .title-bar .page_type_gif{
+    width:30%;
+  }
+  .title-bar .search-box{
+    width:70%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:right;
+   
+  }
+
+
+
+  
