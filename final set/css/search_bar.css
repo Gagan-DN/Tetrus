@@ -1,0 +1,29 @@
+/*search bar start*/
+#search_form {
+    background-color: #fff;
+    width:100%;
+    height: 40px;
+    border-radius: 50px;
+    margin:0px 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+  }
+  #searchwrd {
+    all: unset;
+    font: 16px system-ui;
+    color:  #686868;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  #search_btn{
+    width:30%;
+    background:linear-gradient(to bottom right,#1a8cff,#99ccff,#99ccff,#1a8cff);
+    border-radius:0px 0px 0px 50px;
+  }
+  #searchwrd::placeholder {
+    color: #686868;
+    opacity: 0.7;
+  }
+  /*search bar end*/

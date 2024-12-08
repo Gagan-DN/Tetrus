@@ -1,0 +1,33 @@
+.lf1{
+    background-color: red;
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.rf2{
+    background-color: blue;
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+.rf2 rf2-t1{
+    background-color: brown;
+    height:20%;
+}
+.rf2 rf2-t2{
+    background-color:rgb(11, 11, 11);
+    height:80%;
+}
+.lf1-container{
+    background-color: green;
+    width:80%;
+    height:80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
